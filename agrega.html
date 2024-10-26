@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width">
+
+ <title>Agregar</title>
+ <link rel="stylesheet" href="estilos/agrega.css">
+ <script type="module" src="lib/js/submitForm.js"></script>
+ <script type="module" src="lib/js/muestraError.js"></script>
+
+</head>
+
+<body>
+
+ <form onsubmit="submitForm('srv/vehiculo-agrega.php', event)
+    .then(modelo => location.href = 'index.html')
+    .catch(muestraError)">
+
+  <h1>Agregar Vehiculo</h1>
+
+  <p><a href="index.html">Cancelar</a></p>
+
+  <p>
+   <label>
+    Nombre *
+    <input name="nombre">
+    * Obligatorio
+   </label>
+  </p>
+
+  <p>
+    <label>
+     Numero de serie *
+     <input name="numserie">
+     * Obligatorio
+    </label>
+    
+   </p>
+   
+
+   <p>
+    <label>
+     Placas *
+     <input name="placas">
+     * Obligatorio
+    </label>
+   </p>
+
+  <p><button type="submit">Agregar</button></p>
+
+ </form>
+
+</body>
+
+</html>

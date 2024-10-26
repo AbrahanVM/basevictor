@@ -1,0 +1,7 @@
+<?php
+
+const VEHICULO = "VEHICULO";
+const PAS_ID = "PAS_ID";
+const PAS_NOMBRE = "PAS_NOMBRE";
+const PAS_NUMSERIE = "PAS_NUMSERIE";
+const PAS_PLACAS = "PAS_PLACAS";

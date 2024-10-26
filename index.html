@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width">
+
+ <title>Acceso a base de datos</title>
+ <link rel="stylesheet" href="estilos/index.css">
+ <script type="module" src="lib/js/consumeJson.js"></script>
+ <script type="module" src="lib/js/muestraObjeto.js"></script>
+ <script type="module" src="lib/js/muestraError.js"></script>
+
+</head>
+
+<body onload="consumeJson('srv/vehiculos.php')
+   .then(respuesta => muestraObjeto(document, respuesta.body))
+   .catch(muestraError)">
+
+ <h1>Acceso a Base de Vehiculos</h1>
+
+ <p><a href="agrega.html">Agregar</a></p>
+
+ <ul id="lista">
+  <li><progress max="100">Cargando&hellip;</progress></li>
+ </ul>
+
+
+ <footer>
+  @2024 - Victor Abrahan Mendez Montero IC-41M
+ </footer>
+</body>
+
+</html>
